@@ -5,11 +5,11 @@ set -euxo pipefail
 : ${CONFIG_PATH:="$HOME/config"}
 : ${GCODE_PATH:="$HOME/gcode"}
 
-: ${KLIPPER_REPO:="https://github.com/KevinOConnor/klipper.git"}
+: ${KLIPPER_REPO:="https://gitee.com/miroky/klipper.git"}
 : ${KLIPPER_PATH:="$HOME/klipper"}
 : ${KLIPPY_VENV_PATH:="$HOME/venv/klippy"}
 
-: ${MOONRAKER_REPO:="https://github.com/Arksine/moonraker"}
+: ${MOONRAKER_REPO:="https://gitee.com/miroky/moonraker.git"}
 : ${MOONRAKER_PATH:="$HOME/moonraker"}
 : ${MOONRAKER_VENV_PATH:="$HOME/venv/moonraker"}
 
@@ -25,7 +25,7 @@ fi
 # PRE
 ################################################################################
 
-sudo apk add git unzip python2 python2-dev libffi-dev make gcc g++ \
+sudo apk add git unzip python3 python3-dev libffi-dev make gcc g++ \
 ncurses-dev avrdude gcc-avr binutils-avr avr-libc \
 python3 py3-virtualenv \
 python3-dev freetype-dev fribidi-dev harfbuzz-dev jpeg-dev lcms2-dev openjpeg-dev tcl-dev tiff-dev tk-dev zlib-dev \
